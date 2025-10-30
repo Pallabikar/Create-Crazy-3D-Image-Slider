@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Slider Universe — Classic Models</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">3D Slider Universe</div>
+    <nav class="top-nav">
+      <a href="#cube">Cube</a>
+      <a href="#wall">Gallery Wall</a>
+      <a href="#film">Film Reel</a>
+      <button id="play-btn" class="music-btn">▶ Play Music</button>
+    </nav>
+  </header>
+
+  <!-- audio (no autoplay to satisfy browsers) -->
+  <audio id="bg-sound" loop>
+    <source src="sounds/ambient1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <!-- Section 1: Cube -->
+    <section id="cube" class="section section-cube">
+      <div class="section-inner">
+        <h2 class="section-title">Cube Slider</h2>
+        <p class="section-desc">A classic rotating 3D cube — each face shows an image.</p>
+
+        <div class="cube-wrap">
+          <div class="cube">
+            <div class="face front"><img src="images/bg.png" alt=""></div>
+            <div class="face right"><img src="images/bg2.png" alt=""></div>
+            <div class="face back"><img src="images/code.jpeg" alt=""></div>
+            <div class="face left"><img src="images/dragon1.jpg" alt=""></div>
+            <div class="face top"><img src="images/mockup.png" alt=""></div>
+            <div class="face bottom"><img src="images/rock1.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Gallery Wall -->
+    <section id="wall" class="section section-wall">
+      <div class="section-inner">
+        <h2 class="section-title">Gallery Wall</h2>
+        <p class="section-desc">A calm curved gallery wall — glide past images like in a museum.</p>
+
+        <div class="wall-wrap">
+          <div class="wall">
+            <div class="panel"><img src="images/bg.png" alt=""></div>
+            <div class="panel"><img src="images/bg2.png" alt=""></div>
+            <div class="panel"><img src="images/code.jpeg" alt=""></div>
+            <div class="panel"><img src="images/dragon1.jpg" alt=""></div>
+            <div class="panel"><img src="images/mockup.png" alt=""></div>
+            <div class="panel"><img src="images/rock1.png" alt=""></div>
+            <div class="panel"><img src="images/rock2.png" alt=""></div>
+            <div class="panel"><img src="images/rock3.jpeg" alt=""></div>
+            <div class="panel"><img src="images/img9.jpg" alt=""></div>
+            <div class="panel"><img src="images/img10.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Film Reel -->
+    <section id="film" class="section section-film">
+      <div class="section-inner">
+        <h2 class="section-title">Vintage Film Reel</h2>
+        <p class="section-desc">A subtle film-strip look with tasteful flicker and vignette.</p>
+
+        <div class="film-wrap">
+          <div class="reel">
+            <div class="frame"><img src="images/bg2.png" alt=""></div>
+            <div class="frame"><img src="images/code.jpeg" alt=""></div>
+            <div class="frame"><img src="images/dragon1.jpg" alt=""></div>
+            <div class="frame"><img src="images/mockup.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Made with ♥ by Pallabi</div>
+    <div class="small">Hover sliders to pause animations or use the Play Music button.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
